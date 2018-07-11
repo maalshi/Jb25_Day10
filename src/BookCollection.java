@@ -35,11 +35,12 @@ public class BookCollection {
 	}
 	
 	public void findBook(String content){
-		Iterator<Book> iterator = lib.iterator();
-		while(iterator.hasNext()){
-			System.out.println(iterator.next() + " ");
+		for (Book aLib : lib) {
+			if(aLib.getName().equals(content) || (aLib.getAuthor().equals(content)) )
+			System.out.println(aLib.getName() + " " + aLib.getAuthor());
 		}
 	}
+	
 	
 	public void showList(){
 		Iterator<Book> iterator = lib.iterator();
@@ -53,6 +54,7 @@ public class BookCollection {
             System.out.println("|" + aLib.getName() + "|" + aLib.getAuthor() + "|");
            
         }
+        
     
 	}
 
