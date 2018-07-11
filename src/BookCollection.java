@@ -48,12 +48,12 @@ public class BookCollection {
 		}
 	}
 	
-	public void showTable(){
-		Iterator<Book> iterator = lib.iterator();
-		while(iterator.hasNext()){
-			System.out.println("|" + iterator.next() + "|");
-			System.out.println("_____________________________");
-		}
+	public  void showTable(){
+        for (Book aLib : lib) {
+            System.out.println("|" + aLib.getName() + "|" + aLib.getAuthor() + "|");
+           
+        }
+    
 	}
 
 }

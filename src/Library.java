@@ -12,7 +12,7 @@ public class Library {
 		BookCollection library = new BookCollection();
 		library.addBook(new Book("Consuelo", "Sand"));
 		library.addBook(new Book("Angelica","Golon"));
-		library.addBook(new Book("Count of Monte Christo", "Duma"));
+		library.addBook(new Book("Count of "/n" Monte Christo", "Duma"));
 	
 		//library.removeBook(new Book("Consuelo", "Sand"));
 		//library.showList();

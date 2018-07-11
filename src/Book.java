@@ -27,9 +27,8 @@ public class Book {
 		this.name = name;
 		this.author = author;
 	}
+	
 	private String name;
 	private String author;
-	
-	
 
 }
